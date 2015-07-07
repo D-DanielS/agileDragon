@@ -33,7 +33,7 @@
 .contentViewport h3:first-child, .contentViewport h3.first-child,
 .contentViewport h4:first-child, .contentViewport h4.first-child { padding-top:0; }
 /* text */
-body, .contentViewport { color:#444; font-family:'MuseoSansRounded',sans-serif; font-size:16px; font-weight:300; line-height:20px; }
+body, .contentViewport { color:#444; font-family:'MuseoSansRounded',sans-serif; font-size:20px; font-weight:300; line-height:24px; }
 
 
 /* ==========================================================================

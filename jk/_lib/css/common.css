@@ -292,23 +292,9 @@ body {
 
 /* -------------------------------------------------------------------------- */
 /* main columns */
-.aside 		{ width:37.75%; float:left; clear:left; text-align:center; }
-.main 		{ width:60.10%; float:right; clear:right; }
+.aside 		{ width:auto; float:none; clear:both; text-align:center; }
+.main 		{ width:auto; float:none; clear:both; }
 .mainfull	{ width:980px; float:none; clear:both; margin-left:-20px; }
-
-/* extend aside to suit titles */
-#history .aside 	{ width:26.00%; }
-#journey .aside 	{ width:26.00%; }
-#convent .aside 	{ width:25.00%; }
-#tour .aside 		{ width:25.00%; }
-#enquiry .aside 	{ width:27.00%; }
-#treasure .aside 	{ width:25.00%; }
-#memories .aside 	{ width:27.00%; }
-#occasions .aside 	{ width:29.00%; }
-#concert .aside 	{ width:34.00%; }
-#details .aside 	{ width:24.00%; }
-#pastevents .aside 	{ width:24.00%; }
-#information .aside { width:33.00%; }
 
 /* -------------------------------------------------------------------------- */
 /* flexible columns */
@@ -989,6 +975,26 @@ body {
 
 /* concerts */
 #popup .ins { font-style:italic; padding:20px 0; }
+
+
+
+
+.gallery img {
+	display: block;
+	margin: 30px auto;
+	width: 100%;
+	height: auto;
+	box-sizing: content-box;
+	border: 10px solid #fff;
+}
+.gallery .btnSlideshow {
+	display: block;
+	text-align: center;
+	margin: 1em auto 2em auto;
+	font-weight: bold;
+}
+
+
 
 
 /* ==========================================================================

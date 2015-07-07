@@ -2,14 +2,14 @@
 /* initNav */
 /* ------------------------------------------------------------------------------ */
 function initNav() {
-	
+
 	//vars
 	var $navItems = $('#navItems').find('.navItem'),
 		hasTouch = Modernizr.touch;
-	
+
 	//process
 	$.each($navItems, function(idx,ele){
-		
+
 		//vars
 		var $ele = $(ele),
 			$sepLeft = $ele.prev('.sep'),
@@ -23,19 +23,19 @@ function initNav() {
 			},
 			onHoverOff = function(){
 				if ( $sepLeft.length ) $sepLeft.removeClass('left');
-				if ( $sepRight.length ) $sepRight.removeClass('right');	
+				if ( $sepRight.length ) $sepRight.removeClass('right');
 			};
-		
+
 		//attach behaviors to events
 		if (!hasTouch && !$ele.hasClass('selected')) $ele.hover(onHover, onHoverOff);
-		
+
 		//init onHover for selected
 		if ($ele.hasClass('selected')) {
 			onHover();
 		}
-		
+
 	});
-	
+
 }
 /* ------------------------------------------------------------------------------ */
 /* initBanner */
@@ -70,22 +70,22 @@ function initBanner() {
 /* initFocus */
 /* ------------------------------------------------------------------------------ */
 function initFocus() {
-	
+
 	//exit if no focus
 	if (!$('#focus').length || !$('#intro').length) return false;
-	
+
 	//vars
 	var $window = $(window),
-		$header = $('#header'), 
+		$header = $('#header'),
 		$focus = $('#focus'),
 		$slideshow = $focus.find('.slideshow'),
 		$slides = $slideshow.find('.slide'),
 		$intro = $('#intro'),
-			
+
 		winH, winW, winHeightLimit = 1200,
 		focusW, focusH, focusAR, focusHeightLimit = 350,
 		slideW, slideH, slideAR = 1536/725,
-		
+
 		//getWindowInfo
 		getWindowInfo = function(){
 			winW = $window.innerWidth();
@@ -116,14 +116,14 @@ function initFocus() {
 			} else {
 				//size
 				$slides.removeClass('resizeByWidth');
-				$slides.addClass('resizeByHeight');	
+				$slides.addClass('resizeByHeight');
 				//pos
 				//console.log('slideW:'+slideW, 'focusW:'+focusW);
 				getSlideInfo();
 				$slides.css( 'margin-top', 0 );
 				$slides.css( 'margin-left', -1 * Math.abs((slideW - focusW)/2) );
 				//console.log('byH', slideW - focusW);
-			}	
+			}
 		},
 		//updateFocus
 		updateFocus = function(){
@@ -138,23 +138,23 @@ function initFocus() {
 			//apply updates to slides
 			updateSlides();
 		};
-	
+
 	//update all
 	function update(){
-				
+
 		//get curremt window info
 		getWindowInfo();
-		
+
 		//apply window height limit
 		if (winH > winHeightLimit) {
-			winH = winHeightLimit;	
+			winH = winHeightLimit;
 		}
-		
-		//update focus if current 
+
+		//update focus if current
 		updateFocus();
-		
+
 	}
-	
+
 	//init focus
 	function init(){
 		//first update
@@ -162,19 +162,19 @@ function initFocus() {
 		//update on later resize
 		$window.on('resize', update);
 	}
-	
+
 	//kick-off
 	init();
-	
+
 }
 /* ------------------------------------------------------------------------------ */
 /* initGallery */
 /* ------------------------------------------------------------------------------ */
 function initGallery(){
-	
+
 	//vars
 	var $galleries = $('.gallery'),
-		settings = { 
+		settings = {
 			margin		: [50,30,30,30],
 			padding		: 10,
 			loop		: false,
@@ -182,8 +182,8 @@ function initGallery(){
 			closeEffect	: 'fade',
 			prevEffect 	: 'fade',
 			nextEffect 	: 'fade',
-			beforeShow	: function(){ 
-							this.title = ('<span class="txtNormal">Image ' + (this.index + 1) + ' of ' + this.group.length) + '</span><br/>' + (this.title ? this.title : ''); 
+			beforeShow	: function(){
+							this.title = ('<span class="txtNormal">Image ' + (this.index + 1) + ' of ' + this.group.length) + '</span><br/>' + (this.title ? this.title : '');
 						  },
 			tpl			: {
 							closeBtn :'<a title="Close" class="fancybox-item fancybox-close" href="javascript:;"><span class="label">Close</span><i class="icon icon-remove"></i></a>',
@@ -191,10 +191,10 @@ function initGallery(){
 							prev     :'<a title="Previous" class="fancybox-nav fancybox-prev" href="javascript:;"><span></span><i class="icon icon-angle-left"></i></a>'
 						  }
 		};
-	
+
 	//exit if no instance found
 	if (!$galleries.length) return false;
-	
+
 	//get gallery data
 	function getGalleryData($tgt){
 		//vars
@@ -203,7 +203,7 @@ function initGallery(){
 		//collect each image data
 		$.each($imgs, function(idx,ele){
 			var $img = $(ele);
-			data.push({ 
+			data.push({
 				href:$img.attr('src'),
 				title:$img.attr('alt')
 			});
@@ -211,31 +211,31 @@ function initGallery(){
 		//return for launch function
 		return data;
 	}
-	
+
 	//process gallery instacne
 	$.each($galleries, function(idx,ele){
 		//vars
 		var $gallery = $(ele),
 			galleryData = getGalleryData($gallery), //get data
-			$btnTrigger = $gallery.prev('.btnSlideshow'); //get trigger button
+			$btnTrigger = $gallery.find('.btnSlideshow'); //get trigger button
 		//attach fancybox trigger to button
 		$btnTrigger.on('click', function(e){
 			e.preventDefault();
 			$.fancybox.open(galleryData, settings); //launch fancybox with data
 		});
 	});
-	
+
 }
 /* ------------------------------------------------------------------------------ */
 /* initPastEvents */
 /* ------------------------------------------------------------------------------ */
 function initPastEvents(){
-	
+
 	//vars
 	var $pastevents = $('#pastevents'),
 		$btnEvents = $pastevents.find('.btnEvent'),
 		$btnConcerts = $('#btnConcerts'),
-		settings = { 
+		settings = {
 			type		: 'ajax',
 			width		: '70%',
 			height		: '70%',
@@ -251,30 +251,30 @@ function initPastEvents(){
 			padding		: 10,
 			tpl			: {	closeBtn :'<a title="Close" class="fancybox-item fancybox-close" href="javascript:;"><span class="label">Close</span><i class="icon icon-remove"></i></a>' }
 		};
-	
+
 	//exit if no instance found
 	if (!$pastevents.length || !$btnEvents.length) return false;
-	
+
 	//attach fancybox
 	$btnEvents.fancybox(settings);
 	$btnConcerts.fancybox(settings);
-	
+
 }
 /* ------------------------------------------------------------------------------ */
 /* init */
 /* ------------------------------------------------------------------------------ */
 var Slideshows;
 function init(){
-	
+
 	//layout assistance
 	insertFirstLastChild('#navItems');
-	
+
 	//interaction
 	initNav();
-	
+
 	//media
 	Slideshows = initSlideshows();
-	
+
 	//template specific functions
 	if ( $('body#home').length ) {
 		initHome();
@@ -288,7 +288,7 @@ function init(){
 		//initGallery
 		initGallery();
 		//events
-		if ($('body#concerts').length) initPastEvents();		
+		if ($('body#concerts').length) initPastEvents();
 		//maps
 		if ($('body#contact').length) {
 			initMaps({
@@ -305,16 +305,16 @@ function init(){
 
 	//css3pie rendering
 	initCSS3PIE();
-	
+
 	//debug
 	displayDebugInfo('#debugInfo');
-	
+
 }
 function initHome(){
 	initFocus();
 }
 /* DOM.ready */
-$(document).ready(function(){ 
+$(document).ready(function(){
 	Platform.addDOMClass();
-	init();	
+	init();
 });
