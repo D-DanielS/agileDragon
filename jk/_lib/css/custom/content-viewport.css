@@ -45,7 +45,7 @@ body, .contentViewport { color:#444; font-family:'MuseoSansRounded',sans-serif; 
 .contentViewport h2	{ color:#a98e60; font-size:25px; line-height:30px; font-weight:400; font-style:italic; margin:0!important; padding:10px 0px 10px 0px; }
 .contentViewport h3 { color:#222222; font-size:18px; line-height:20px; font-weight:500; font-style:normal; margin:0!important; padding:10px 0px 10px 0px; }
 .contentViewport h4 { color:#444444; font-size:17px; line-height:20px; font-weight:500; font-style:normal; margin:0!important; padding:10px 0px 10px 0px; }
-.contentViewport p  { color:#444444; font-size:14px; line-height:20px; font-weight:300; font-style:normal; margin:0!important; padding: 0px 0px 10px 0px; }
+.contentViewport p  { color:#444444; font-size:16px; line-height:22px; font-weight:300; font-style:normal; margin:0!important; padding: 0px 0px 10px 0px; }
 
 /* headings - common */
 .h1,
@@ -202,6 +202,42 @@ body, .contentViewport { color:#444; font-family:'MuseoSansRounded',sans-serif; 
 .contentViewport p .title,
 .contentViewport a .title { font-size:15px; }
 
+/* ==========================================================================
+   cog - IMAGE
+   ========================================================================== */
+
+.contentViewport img {
+	display: block;
+	width: auto;
+	height: auto;
+	margin: 30px;
+	border: 10px solid #ceb78d;
+	border-radius: 20px;
+}
+.contentViewport img:first-child {
+	margin-top:0!important;
+}
+.contentViewport img.full {
+	width: 100%;
+	margin: 30px auto;
+	box-sizing: border-box;
+}
+.contentViewport img.fleft {
+	margin-left: 0;
+}
+.contentViewport img.fright {
+	margin-right: 0;
+}
+.contentViewport img.fleft,
+.contentViewport img.fright {
+	max-width: 40%;
+}
+.contentViewport img.noborder {
+	border: 10px solid transparent;
+}
+.contentViewport img.anatomy {
+	background: #fff;
+}
 
 /* ==========================================================================
    cog - DIVIDER
