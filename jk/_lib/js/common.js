@@ -335,7 +335,7 @@ function init() {
 
 function initHome() {
 	initFocus();
-	addFooter();
+	// addFooter();
 }
 /* DOM.ready */
 $(document).ready(function () {
