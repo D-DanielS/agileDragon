@@ -1,4 +1,14 @@
 /* ------------------------------------------------------------------------------ */
+/* addFooter */
+/* ------------------------------------------------------------------------------ */
+function addFooter() {
+	$target = $('#container');
+	$.get('footer.html', function(data, error){
+		console.log(error);
+		$target.append(data);
+	});
+}
+/* ------------------------------------------------------------------------------ */
 /* initNav */
 /* ------------------------------------------------------------------------------ */
 function initNav() {
@@ -319,10 +329,13 @@ function init() {
 	//debug
 	displayDebugInfo('#debugInfo');
 
+	addFooter();
+
 }
 
 function initHome() {
 	initFocus();
+	addFooter();
 }
 /* DOM.ready */
 $(document).ready(function () {

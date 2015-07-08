@@ -104,10 +104,10 @@ body {
 #header { margin-bottom:5px; border-bottom:1px solid #e3d6bb; }
 
 	/* padder */
-	#header .padder { height:94px; }
+	#header .padder { height:auto; }
 
 	/* brand */
-	#header .brand { position:absolute; top:50%; left:0; width:260px; height:97px; margin:-50px 0 0 0; padding:0; overflow:hidden; }
+	#header .brand { /*position:absolute; top:50%; left:0;*/ width:260px; height:97px; margin:20px auto 0 auto; padding:0; overflow:hidden; }
 	#header .brand a { display: block; }
 	#header .brand .crest { display:block; width:100%; height:auto; margin:0; padding:0; }
 
@@ -118,7 +118,6 @@ body {
 
 	#header .brand {
 		position: relative;
-		margin: 10px auto;
 		top: auto;
 		left: auto;
 		right: auto;
@@ -146,10 +145,10 @@ body {
 
 /* -------------------------------------------------------------------------- */
 /* container */
-#nav { position:absolute; top:0; right:0; width:710px; height:100%; margin:0; padding:0; overflow:hidden; }
+#nav { /*position:absolute; top:0; right:0; */width:100%; height:auto; margin:0; padding:0; overflow:hidden; }
 
 	/* navItems */
-	#navItems { width:auto; height:32px; margin:31px 9px 31px 0; padding:0; overflow:visible; text-align:right; }
+	#navItems { width:auto; height:32px; margin:31px 9px 31px 0; padding:0; overflow:visible; text-align:center; }
 
 		/* -------------------------------------------------------------------------- */
 		/* navItem */
