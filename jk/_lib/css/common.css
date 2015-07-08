@@ -1016,7 +1016,16 @@ body {
 	font-weight: bold;
 }
 
+.zoolink {
 
+}
+.zoolink a {
+	text-decoration: none;
+	font-size: 20px;
+}
+.zoolink a:hover {
+	text-decoration: underline;
+}
 
 
 /* ==========================================================================
