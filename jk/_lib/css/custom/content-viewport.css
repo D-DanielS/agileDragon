@@ -176,7 +176,7 @@ body, .contentViewport { color:#444; font-family:'MuseoSansRounded',sans-serif; 
    ========================================================================== */
 .leaderText,
 .contentViewport .leaderText {
-	color:#a98e60; font-family:'Gentium Book Basic',serif; font-size:19px; line-height:22px; font-weight:400; font-style:italic;
+	color:#a98e60; font-family:'Gentium Book Basic',serif; font-size:26px; line-height:30px; font-weight:600; font-style:italic;
 	margin:0!important; padding:0px 0px 10px 0px; text-transform:none; }
 
 /* custom */
