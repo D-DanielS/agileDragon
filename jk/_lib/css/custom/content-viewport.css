@@ -56,38 +56,38 @@ body, .contentViewport { color:#444; font-family:'MuseoSansRounded',sans-serif; 
 
 /* headings - custom */
 .h1,
-.contentViewport h1	{ font-family:'Raleway',sans-serif; text-transform:uppercase; }
+.contentViewport h1	{ font-family:Arial, helvetica, sans-serif; text-transform:uppercase; }
 .aside .h1, .aside h1 { padding }
-.contentViewport h2 { font-family:'Gentium Book Basic',serif; }
+.contentViewport h2 { font-family:Arial, helvetica, sans-serif; }
 .contentViewport h3 { text-transform:uppercase; }
 
 /* themes h1 */
 .blockRed .contentViewport h1, .blockRed .h1,
 .blockGreen .contentViewport h1, .blockGreen .h1,
-.blockGold .contentViewport h1, .blockGold .h1 { color:#fff; }
+.blockGold .contentViewport h1, .blockGold .h1 { color:#525c51; }
 .blockDark .contentViewport h1, .blockDark .h1 { color:#cbb181; }
 
 /* themes h2 */
 .blockRed .contentViewport h2,
 .blockGreen .contentViewport h2,
-.blockDark .contentViewport h2 { color:#ceb78d; }
+.blockDark .contentViewport h2 { color:#525c51; }
 .blockGold .contentViewport h2 { color:#d3c9b8; }
 
 /* themes h3 */
 .blockRed .contentViewport h3 	{ color:#d6bdc2; }
-.blockGreen .contentViewport h3 { color:#cbcfcb; }
+.blockGreen .contentViewport h3 { color:#525c51; }
 .blockGold .contentViewport h3	{ color:#e1dacc; }
 .blockDark .contentViewport h3 	{ color:#c5c5c5; }
 
 /* themes h4 */
 .blockRed .contentViewport h4 	{ color:#d6bdc2; }
-.blockGreen .contentViewport h4 { color:#cbcfcb; }
+.blockGreen .contentViewport h4 { color:#525c51; }
 .blockGold .contentViewport h4 	{ color:#e1dacc; }
 .blockDark .contentViewport h4 	{ color:#c5c5c5; }
 
 /* themes p */
 .blockRed .contentViewport p	{ color:#d6bdc2; }
-.blockGreen .contentViewport p	{ color:#cbcfcb; }
+.blockGreen .contentViewport p	{ color:#525c51; }
 .blockGold .contentViewport p	{ color:#e1dacc; }
 .blockDark .contentViewport p 	{ color:#c5c5c5; }
 
@@ -102,7 +102,7 @@ body, .contentViewport { color:#444; font-family:'MuseoSansRounded',sans-serif; 
 
 /* themes */
 .blockRed .contentViewport a 	{ color:#d6bdc2; }
-.blockGreen .contentViewport a 	{ color:#cbcfcb; }
+.blockGreen .contentViewport a 	{ color:#3368ab; }
 .blockGold .contentViewport a 	{ color:#e1dacc; }
 .blockDark .contentViewport a 	{ color:#c5c5c5; }
 
@@ -166,7 +166,7 @@ body, .contentViewport { color:#444; font-family:'MuseoSansRounded',sans-serif; 
 
 /* themes li */
 .blockRed .contentViewport li 	{ color:#d6bdc2; }
-.blockGreen .contentViewport li { color:#cbcfcb; }
+.blockGreen .contentViewport li { color:#4f594e; }
 .blockGold .contentViewport li 	{ color:#e1dacc; }
 .blockDark .contentViewport li 	{ color:#c5c5c5; }
 
@@ -176,7 +176,7 @@ body, .contentViewport { color:#444; font-family:'MuseoSansRounded',sans-serif; 
    ========================================================================== */
 .leaderText,
 .contentViewport .leaderText {
-	color:#a98e60; font-family:'Gentium Book Basic',serif; font-size:26px; line-height:30px; font-weight:600; font-style:italic;
+	color:#a98e60; font-family:Arial, helvetica, sans-serif; font-size:26px; line-height:30px; font-weight:600; font-style:italic;
 	margin:0!important; padding:0px 0px 10px 0px; text-transform:none; }
 
 /* custom */
@@ -185,7 +185,7 @@ body, .contentViewport { color:#444; font-family:'MuseoSansRounded',sans-serif; 
 
 /* themes */
 .blockRed .leaderText, .blockRed .contentViewport .leaderText,
-.blockGreen .leaderText, .blockGreen .contentViewport .leaderText 	{ color:#ceb78d; }
+.blockGreen .leaderText, .blockGreen .contentViewport .leaderText 	{ color:#0067ab; }
 .blockDark .leaderText, .blockDark .contentViewport .leaderText 	{ color:#b0b0b0; }
 .blockGold .leaderText, .blockGold .contentViewport .leaderText 	{ color:#d3c9b8; }
 
@@ -273,7 +273,7 @@ body, .contentViewport { color:#444; font-family:'MuseoSansRounded',sans-serif; 
 
 	/* themes */
 	.blockRed .dividerDiamond .line,
-	.blockGreen .dividerDiamond .line	{ border-top-color:#ceb78d; }
+	.blockGreen .dividerDiamond .line	{ border-top-color:#0067ab; }
 	.blockDark .dividerDiamond .line	{ border-top-color:#b0b0b0; }
 	.blockGold .dividerDiamond .line	{ border-top-color:#d3c9b8; }
 

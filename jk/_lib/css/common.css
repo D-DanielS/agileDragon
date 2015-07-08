@@ -235,7 +235,7 @@ body {
 /* -------------------------------------------------------------------------- */
 /* container */
 #footer { color:#fff; background:#aa956f url(../img/bg-tile-gold.jpg); }
-
+	#footer a {color:#fff!important;}
 	/* footerLinks */
 	#footerLinks { padding:15px 0; }
 
@@ -243,7 +243,7 @@ body {
 		#footerLinks span,
 		#footerLinks a {
 			color:#fff; border:none;
-			font-family:'Gentium Book Basic',serif; font-style:italic; font-size:14px; line-height:20px;
+			font-family:Arial, helvetica, sans-serif; font-style:italic; font-size:14px; line-height:20px;
 			text-decoration:none; }
 		#footerLinks a:hover,
 		#footerLinks a:focus,
@@ -358,7 +358,7 @@ body {
 .sysmsg {
 	position:relative; width:auto; height:auto; margin:0; padding:20px; overflow:hidden;
 	color:#fff; text-align:center;background:#666;
-	font-family:'Gentium Book Basic',serif; font-size:22px; font-weight:400; line-height:25px; font-style:italic; }
+	font-family:Arial, helvetica, sans-serif; font-size:22px; font-weight:400; line-height:25px; font-style:italic; }
 .oldie .sysmsg { padding-bottom:10px; }
 
 	/* common */
@@ -399,7 +399,7 @@ body {
 	.formView h2 {
 		margin:0 0 20px 0; padding:0;
 		color:#cbb181; border-bottom:1px solid #585858;
-		font-family:'Gentium Book Basic',serif; font-size:22px; line-height:39px; font-weight:400; font-style:italic; }
+		font-family:Arial, helvetica, sans-serif; font-size:22px; line-height:39px; font-weight:400; font-style:italic; }
 
 	/* -------------------------------------------------------------------------- */
 	/* h3 */
@@ -522,11 +522,11 @@ body {
 		.headingBox .padder .label {
 			display:inline-block; width:auto; min-width:300px; height:auto; margin:0; padding:35px 50px; overflow:hidden;
 			color:#000; border:1px solid #000;
-			font-family:'Raleway',sans-serif; font-size:33px; font-weight:500; line-height:35px; text-transform:uppercase; }
+			font-family:Arial, helvetica, sans-serif; font-size:33px; font-weight:500; line-height:35px; text-transform:uppercase; }
 
 			/* small */
 			.headingBox .padder .label .small {
-				font-family:'Gentium Book Basic',serif; font-size:22px; font-weight:400; font-style:italic; text-transform:none; vertical-align:text-top; }
+				font-family:Arial, helvetica, sans-serif; font-size:22px; font-weight:400; font-style:italic; text-transform:none; vertical-align:text-top; }
 
 
 /* ==========================================================================
@@ -572,7 +572,7 @@ body {
 	.item .title {
 		padding:0 0 5px 0;
 		color:#333;
-		font-family:'Gentium Book Basic',serif; font-size:22px; line-height:25px; font-weight:400; font-style:italic;
+		font-family:Arial, helvetica, sans-serif; font-size:22px; line-height:25px; font-weight:400; font-style:italic;
 		/*transition*/
 		/*-webkit-transform:translate3d(0,0,0);*/
 		-webkit-transition:color 0.3s ease-in-out;
@@ -868,7 +868,7 @@ body {
 
 			/* custom */
 			#home #action .btnAction .headings .h1 				{ padding-top:2px; overflow:visible; font-size:31px; line-height:1em; }
-			#home #action .btnAction .headings .leaderText 		{ font-family:Georgia,serif; font-size:20px; line-height:30px; }
+			#home #action .btnAction .headings .leaderText 		{ font-family:Arial, helvetica, sans-serif; font-size:20px; line-height:30px; }
 			#home #action .btnAction .headings .p 				{ font-size:14px; line-height:16px; max-height:48px;/*3 lines*/ opacity:0; }
 			#home #action .btnAction .headings .divider			{ margin:7px 0; background-position:center -60px; opacity:0; }
 			#home #action .btnAction .headings .divider .line	{ border-top-color:#d3c9b8; }
