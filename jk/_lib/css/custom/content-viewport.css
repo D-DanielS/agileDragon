@@ -238,6 +238,13 @@ body, .contentViewport { color:#444; font-family:'MuseoSansRounded',sans-serif; 
 .contentViewport img.anatomy {
 	background: #fff;
 }
+.contentViewport img.search {
+	width: 100px;
+	margin: 10px auto 20px auto;
+	padding: 20px;
+	background: #fff;
+	border-radius: 50%;
+}
 
 /* ==========================================================================
    cog - DIVIDER
